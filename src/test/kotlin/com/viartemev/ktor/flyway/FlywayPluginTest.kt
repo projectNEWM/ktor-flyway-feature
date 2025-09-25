@@ -12,7 +12,7 @@ import org.testcontainers.junit.jupiter.Testcontainers
 class FlywayPluginTest {
 
     @Container
-    val postgres: PostgreSQLContainer<*> = PostgreSQLContainer<Nothing>("postgres:14.2").apply {
+    val postgres: PostgreSQLContainer<*> = PostgreSQLContainer<Nothing>("postgres:17").apply {
         withDatabaseName("flyway")
         withUsername("flyway")
         withPassword("12345")
